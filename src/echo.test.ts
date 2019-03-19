@@ -9,7 +9,7 @@ describe("POST /echo", () => {
     await supertest(app)
       .post("/echo")
       .send(expected)
-      .expect("Content-Type", "application/json; charset=utf-8")
+      .expect("Content-Type", /application\/json/)
       .expect(expected);
   });
 });
