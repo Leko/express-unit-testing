@@ -4,9 +4,9 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import { json } from "body-parser";
-import { ping } from "./ping";
-import { hello } from "./hello";
-import { echo } from "./echo";
+import { ping } from "./routes/ping";
+import { hello } from "./routes/hello";
+import { echo } from "./routes/echo";
 
 export function createApp() {
   const app = express();

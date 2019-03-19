@@ -1,5 +1,5 @@
 import supertest from "supertest";
-import { createApp, addRoutes } from "./app";
+import { createApp, addRoutes } from "../app";
 
 const app = addRoutes(createApp());
 
